@@ -6,6 +6,9 @@ import Bitcoinstats from './component/Bitcoinstats';
 import Getstarted from './component/Getstarted';
 import TrendingCoins from './component/TrendingCoins';
 import Sentiment from './component/Sentiment';
+import Performance from './component/Performance';
+import TradingViewWidget from './component/TradingViewWidget';
+ 
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           <div className='leftsection'>
             <Bitcoinstats/>
             <Sentiment/>
+            <Performance/>
+            <TradingViewWidget/>
           </div>
           <div className='rightsection'>
 

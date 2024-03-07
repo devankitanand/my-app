@@ -5,7 +5,7 @@ import { IoMdArrowDropup } from "react-icons/io";
 
 const HeroGraph = () => {
   const [bitcoinData, setBitcoinData] = useState(null);
-  const [chartData, setChartData] = useState(null);
+  // const [chartData, setChartData] = useState(null);
 //   const [dates, setDates] = useState([]);
 //   const [prices, setPrices] = useState([]);
 

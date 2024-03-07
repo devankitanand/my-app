@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Breadcrumb from './component/Breadcrumb';
+import Navbar from './component/Navbar';
+import Bitcoinstats from './component/Bitcoinstats';
+import Getstarted from './component/Getstarted';
+import TrendingCoins from './component/TrendingCoins';
+import Sentiment from './component/Sentiment';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <div className='mainbody'>
+      <Navbar />
+      <div className='maincontent'>
+        <Breadcrumb/>
+        <div className='stats'>
+          <div className='leftsection'>
+            <Bitcoinstats/>
+            <Sentiment/>
+          </div>
+          <div className='rightsection'>
+
+            <Getstarted/>
+            <TrendingCoins/>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    
+    </>
   );
 }
 

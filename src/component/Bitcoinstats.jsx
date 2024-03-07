@@ -1,8 +1,8 @@
 import React from 'react'
-
+import HeroGraph from './HeroGraph'
 const Bitcoinstats = () => {
   return (
-    <div className='bitcoinstats'>Bitcoin</div>
+    <div className='bitcoinstats'><HeroGraph/></div>
   )
 }
 
